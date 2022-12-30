@@ -82,6 +82,11 @@ body {
     margin-bottom: 20px;
 }
 
+#author a:link {color: #969696;}      /* unvisited link */
+#author a:visited {color: #969696;}   /* visited link */
+#author a:hover {color: #969696;}     /* mouse over link */
+#author a:active {color: #969696;}    /* selected link */
+
 @media (max-width: 1050px) {
     .container {
         margin: 20px;
