@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header h1 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+}
+
+.header div {
+    font-family: 'Poppins', sans-serif;
+    max-width: 375px;
+}
+
+#title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#desc {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container {
+    margin: 100px 0px 100px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-self: center;
+    gap: 100px;
+    flex: 1;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+}
+
+#img-name p {
+    margin-top: 7.5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#job p {
+    margin-left: 7.5px;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    text-transform: uppercase;
+}
+
+.item:nth-child(3n-1) {
+    margin-top: 25%;
+}
+
+.item div img {
+    max-width: 100%;
+    width: auto;
+    max-height: 400px;
+}
+
+#author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color:#BDBDBD;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#author a:link {color: #969696;}      /* unvisited link */
+#author a:visited {color: #969696;}   /* visited link */
+#author a:hover {color: #969696;}     /* mouse over link */
+#author a:active {color: #969696;}    /* selected link */
+
+@media (max-width: 1150px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 770px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .item {
+        margin: 20px;
+    }
+
+    .item:nth-child(3n-1) {
+        margin-top: 0;
+    }
+}
