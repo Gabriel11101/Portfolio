@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
     margin: 0;
@@ -7,8 +7,22 @@
     font-family: 'Space Mono', monospace;
 }
 
-html, body {
-    min-height: 100vh;
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#error {
+    color: black;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .container {
@@ -17,7 +31,7 @@ html, body {
     justify-content: center;
     align-items: center;
     gap: 7.5%;
-    min-height: 100vh;
+    flex: 1;
 }
 
 .container img {
@@ -34,12 +48,14 @@ html, body {
 }
 
 .content h1 {
+    color:#333333;
     font-size: 48px;
     font-weight: 700;
     max-width: 15ch;
 }
 
 .content p {
+    color: #4F4F4F;
     font-weight: 400;
     font-size: 24px;
     max-width: 400px;
@@ -54,7 +70,16 @@ html, body {
 }
 
 .content button:hover {
-    background-color: darkgray;
+    background-color: #1c1c1c;
+}
+
+#author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color:#BDBDBD;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 1050px) {
